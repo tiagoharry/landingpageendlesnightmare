@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(./assets/background-image.png);
+  min-height: 100vh;
+  background-size: cover;
+  background-position: 50%;
+}
+
+.page {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+h3 {
+  color: #FFFFFF;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+h3 span,
+h1{
+  color: #FFC700;
+}
+
+h1 {
+  font-family: 'Emilys Candy', cursive;
+  font-size: 64px;
+  line-height: 80px;
+  text-align: justify;
+  margin: 4px 0;
+}
+
+p {
+  color: rgba(255, 255, 255, 0.7);
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 48px;
+  margin-top: 72px;
+}
+
+#readButton {
+  font-family: 'Inter', sans-serif;
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+  transition: .5s ease;
+}
+
+#readButton:hover {
+  color: #FFC700;
+  border-bottom: 1px solid #FFC700;
+}
+
+#playButton {
+  background-color: #FFC700;
+  border: none;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  padding: 12px 32px;
+  cursor: pointer;
+  transition: .5s ease;
+}
+
+#playButton:hover {
+  color: #FFC700;
+  background: rgb(233, 230, 230);
+}
+
+@media (max-width: 860px) {
+  body {
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+  }
+
+  h3 {
+  font-size: 20px;
+  line-height: 19px;
+}
+
+  h1 {
+    font-size: 72px;
+    line-height: 75px;
+    margin: 8px 0;
+  }
+
+  p {
+  font-size: 25px;
+  line-height: 24px;
+}
+
+  #playButton {
+    font-size: 25px;
+    padding: 15px 35px;
+  }
+
+  #readButton {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 460px) {
+  body {
+    background-size: cover;
+    background-position: 50%;
+  }
+
+  h1 {
+    font-size: 64px;
+    line-height: 60px;
+  }
+
+  p {
+    padding-left: 30px;
+    padding-right: 30px;
+
+  }
+
+  #playButton {
+    font-size: 18px;
+  }
+
+  #readButton {
+    font-size: 18px;
+  }
+}
